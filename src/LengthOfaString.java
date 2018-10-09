@@ -9,7 +9,7 @@ public class LengthOfaString {
 		String name = in.nextLine();
 
 		int len = LengthUsingChar(name);
-		System.out.println("Length of the staring " + name + " is " + len);
+		System.out.println("Length of the " + name + " is " + len);
 
 	}
 
@@ -18,7 +18,7 @@ public class LengthOfaString {
 		char[] namearray = name.toCharArray();
 		int count = 0;
 		for (char ch : namearray) {
-			System.out.println(ch);
+			//System.out.println(ch);
 			count++;
 		}
 		return count;
