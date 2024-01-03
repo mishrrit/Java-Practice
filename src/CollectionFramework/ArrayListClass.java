@@ -10,6 +10,7 @@ public class ArrayListClass {
 	 * @ArrayList : this is to differentiate between the static and dynamic array classes
 	 * @static array : size cannot be changed during run time  
 	 */
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static <E> void main(String[] args) {
 		
 		//************************Static Array*****************************************
@@ -26,7 +27,7 @@ public class ArrayListClass {
 		System.out.println("**************END******************\n");	
 		//**********************Dynamic Array using ArrayList****************************
 		//Non Generic- Array list are not generalized i.e. can hold any type of data types
-		ArrayList ar = new ArrayList();
+		ArrayList<Comparable> ar = new ArrayList();
 		ar.add(40);
 		ar.add("Ritesh");
 		ar.add('R');
@@ -121,12 +122,7 @@ public class ArrayListClass {
 			System.out.println(Gen.Name);
 			System.out.println(Gen.age);
 			System.out.println(Gen.Dept);
-		}
-		
-		
-		
-		
-		
+		}	
 		
 
 	}
