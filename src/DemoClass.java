@@ -8,6 +8,7 @@ public class DemoClass {
 		System.out.println("i am in main method");
 		
 		 methodb();
+		 methodc(10);
 
 	}
 	

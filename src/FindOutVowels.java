@@ -20,11 +20,7 @@ public class FindOutVowels {
 			}
 		}
 
-		System.out.println(" Number of vowels are "+count);
-
-		
-		
-		
+		System.out.println(" Number of vowels are "+count);		
 
 	}
 
