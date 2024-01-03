@@ -12,6 +12,7 @@ public class Palindrome {
 		boolean PalindromeFlag =FindPalindrome(Input);
 		
 		System.out.println(" Given string "+Input+ " is Palindrome :"+PalindromeFlag);
+		in.close();
 	}
 
 	private static boolean FindPalindrome(String input) {
