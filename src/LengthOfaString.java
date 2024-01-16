@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class LengthOfaString {
 
-	@SuppressWarnings("resource")
+	
 	public static void main(String[] args) {
 		System.out.println(" enter the string  ");
 		Scanner in = new Scanner(System.in);
@@ -10,6 +10,7 @@ public class LengthOfaString {
 
 		int len = LengthUsingChar(name);
 		System.out.println("Length of the " + name + " is " + len);
+		in.close();
 
 	}
 

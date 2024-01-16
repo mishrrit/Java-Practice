@@ -88,6 +88,7 @@ public class GradingStudent {
 			System.out.print(result[i] + (i != result.length - 1 ? "\n" : ""));
 		}
 		System.out.println("");
+		in.close();
 
 
 	}

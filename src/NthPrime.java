@@ -9,6 +9,7 @@ public class NthPrime {
 		
 		int prime = Prime(nth);
 		System.out.println(nth+ " prime number is "+prime);
+		in.close();
 		
 
 	}

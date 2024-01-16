@@ -84,6 +84,7 @@ public class TimeConversion {
 		String s = in.next();
 		String result = timeConversion(s);
 		System.out.println(result);
+		in.close();
 	}
 
 }
