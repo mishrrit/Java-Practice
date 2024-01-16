@@ -1,0 +1,60 @@
+List:
+1. Order based collection
+2. Index based
+
+ArrayList
+Dynamic list
+LinkedList
+DynamicArray
+
+Set
+No Duplicates
+
+Queue:
+FIFO
+
+Map
+key: value 
+
+Iterator
+iterates over an element from collection
+
+
+
+Advantage of Collection Framework
+
+1. Reduces Programming effort
+2. Provide built in methods and classes
+3. Increase productivity
+4. Reduce Operational Time
+5. Interoperablity
+
+
+Common Methods
+1. add
+2. addall
+3. remove
+4. removeall
+5. size()
+6. clear()
+7. contains()
+8. containsall()
+9. retain()
+10. retainall()
+
+
+Common Exceptions
+1. Null POinter Exceptions
+2. Classcast Exceptions
+3. Illegal Argument Exception
+4. Illegal State Exceptions
+5. UnsupportedOperationException
+
+
+
+ThreadSafe:
+When multiple threads are trying to access the same piece of data and the value of the data is getting changed, 
+this is not thread-safe and will get inconsistent result
+
+Async - multi thread at a time
+Sync- single thread a time
