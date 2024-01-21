@@ -58,3 +58,7 @@ this is not thread-safe and will get inconsistent result
 
 Async - multi thread at a time
 Sync- single thread a time
+
+Hashmap
+Hashcode is used as Internal mechanism  and work as a linked list
+HashCode for Null keys are always 0
