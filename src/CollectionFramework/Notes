@@ -27,7 +27,7 @@ Advantage of Collection Framework
 2. Provide built in methods and classes
 3. Increase productivity
 4. Reduce Operational Time
-5. Interoperablity
+5. inter-operablity
 
 
 Common Methods
@@ -59,6 +59,19 @@ this is not thread-safe and will get inconsistent result
 Async - multi thread at a time
 Sync- single thread a time
 
-Hashmap
-Hashcode is used as Internal mechanism  and work as a linked list
+HashMap
+HashCode is used as Internal mechanism  and work as a linked list
 HashCode for Null keys are always 0
+
+------------------------
+HashTable       vs       HashMap     vs      SynchronizedMap vs      ConcurrentHashmap
+not thread safe			thread safe				thread safe				thread safe
+one null key			no null key			null key allowed		null key allowed
+multiple null values	not allowed			  allowed						allowed
+
+
+Concurrent hashMap after java 1.5 - best for performance
+create segments of size 16, multiple thread can access one of the segments at a time, not the one which is locked by thread1
+
+
+

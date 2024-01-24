@@ -10,6 +10,7 @@ public class ArrayListClass {
 	 * @ArrayList : this is to differentiate between the static and dynamic array classes
 	 * @static array : size cannot be changed during run time  
 	 */
+	@SuppressWarnings("rawtypes")
 	public static <E> void main(String[] args) {
 		
 		//************************Static Array*****************************************
@@ -26,7 +27,7 @@ public class ArrayListClass {
 		System.out.println("**************END******************\n");	
 		//**********************Dynamic Array using ArrayList****************************
 		//Non Generic- Array list are not generalized i.e. can hold any type of data types
-		ArrayList ar = new ArrayList();
+		ArrayList<Comparable> ar = new ArrayList<Comparable>();
 		ar.add(40);
 		ar.add("Ritesh");
 		ar.add('R');
@@ -39,18 +40,18 @@ public class ArrayListClass {
 		
 		
 		System.out.println("******************* Adding Set 2 to Set 1**********************");
-		ArrayList ar1 = new ArrayList();
+		ArrayList<Comparable> ar1 = new ArrayList<Comparable>();
 		ar1.add(50);
 		ar1.add("Sippi");
 		ar1.add('R');
 		
-		ArrayList ar2 = new ArrayList();
+		ArrayList<Comparable> ar2 = new ArrayList<Comparable>();
 		ar2.add(40);
 		ar2.add("Ritesh");
 		ar2.add('R');
 		
 		
-		ArrayList ar3 = new ArrayList();
+		ArrayList<Comparable> ar3 = new ArrayList<Comparable>();
 		ar3.add(1);
 		ar3.add("Reyaan");
 		ar3.add('R');
@@ -63,12 +64,12 @@ public class ArrayListClass {
 		
 		
 		System.out.println("******************* Common Set between the two**********************");
-		ArrayList ar4 = new ArrayList();
+		ArrayList<Comparable> ar4 = new ArrayList<Comparable>();
 		ar4.add(50);
 		ar4.add("Sippi");
 		ar4.add('R');
 		
-		ArrayList ar5 = new ArrayList();
+		ArrayList<Comparable> ar5 = new ArrayList<Comparable>();
 		ar5.add(40);
 		ar5.add("Ritesh");
 		ar5.add('R');
@@ -80,12 +81,12 @@ public class ArrayListClass {
 		
 		System.out.println("******************* Removing  Set 2 from  Set 1**********************");
 		
-		ArrayList ar6 = new ArrayList();
+		ArrayList<Comparable> ar6 = new ArrayList<Comparable>();
 		ar6.add(50);
 		ar6.add("Sippi");
 		ar6.add('S');
 		
-		ArrayList ar7 = new ArrayList();
+		ArrayList<Comparable> ar7 = new ArrayList<Comparable>();
 		ar7.add(40);
 		ar7.add("Ritesh");
 		ar7.add('R');
