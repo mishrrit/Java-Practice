@@ -1,0 +1,83 @@
+1. How does put() method of HashMap works in Java?
+Answer: Using Hashing principle. HashCode is generated using HashFucntion with the KeySet,
+then the mod is calculated on the result set that is one of the index of the storage.
+HashMap<k,v> 
+int n = HashFucntion(k) -> HashCode
+int id = |n| //Mod of HashCode is calculated |HashCode|
+|---|_ _ 0
+|---|_ _ 1
+|---|_ _ 2
+|---|					NODE
+|---|			-----------------------------
+				| Null | Key | Value | Null |
+				----------------------------
+				
+2. What is the requirement for an object to be used as key or value in HashMap?
+Answer: Implement HashCode method(PUT) and equals method(GET)
+
+
+3. What will happen if you try to store a key which is already present in HashMap?
+Answer:It will get stored, but the latest value will be picked up when we do GET key
+
+
+4. Can you store a null key in Java HashMap?
+Answer:Yes, only one null key is allowed
+ 
+5. Can you store a null value inside HashMap in Java?
+Answer: multiple null values are allowed
+
+6. How does HashMap handle collisions in Java? 
+Answer: using LinkedHashMap, so the last bucket of  the first KeySet will be linked to the first bucket of the next key set
+
+7. Which data structure HashMap represents? 
+Answer: HashMapTable and BinaryTree , when the threshold reaches to 75% of the total storage, it converts into BinaryTree
+
+8. Which data structure is used to implement HashMap in Java? 
+Answer:HashMapTable and BinaryTree
+
+
+9. Can you store a duplicate key in HashMap? (answer)
+Answer:No, it overrides and uses the latest value stored in the HashMap
+
+
+10. Can you store the duplicate value in Java HashMap? (answer)
+Answer:Yes, duplicate value can be stored
+
+11. Is HashMap thread-safe in Java? 
+Answer:Not thread safe or not synchronized
+
+12. What will happen if you use HashMap in a multi-thread Java application? 
+Data might get corrupted, and would not result correctly
+
+
+13. What are the different ways to iterate over HashMap in Java? 
+Answer: 
+KeySet and iterator
+EntrySet and Iterator
+EntrySet and enhanced for loop
+KeySet and get method
+lambda expression - foreach
+
+14. How do you remove a mapping while iterating over HashMap in Java?
+Answer: remove()
+
+15. In which order mappings are stored in HashMap? 
+Answer: orders are not stored, so random orders
+
+16. Can you sort HashMap in Java? (answer)
+Answer: No, its not stored in an order but that need to converted to LinkedHashMap
+
+17. What is the load factor in HashMap? 
+Answer: A load factor is a number that controls the resizing of HashMap when a number of elements in the HashMap cross the load factor as if the load factor is 0.75 and when becoming more than 75% full then resizing trigger which involves array copy.
+
+18. How does resizing happens in HashMap? (answer)
+Answer: 75% threshold(load factor), doubles the size
+
+19. How many entries you can store in HashMap? What is the maximum limit? 
+Answer: By default it 16, and there are no limits
+
+20. What is the difference between the capacity and size of HashMap in Java? 
+Answer: Capacity is a virtual capacity which is created by default i.e. 16 and size is the actual size of the HashMap
+
+21. What will happen if two different keys of HashMap return the same HashCode()?
+Answer: HashMap Collision  and once it reaches up to 80%, it converts to Balanced BinaryTree.

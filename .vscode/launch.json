@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HashMapToArrayList",
+            "request": "launch",
+            "mainClass": "CollectionFramework.HashMapToArrayList",
+            "projectName": "Java_Preparation"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
