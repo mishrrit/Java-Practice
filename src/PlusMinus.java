@@ -1,6 +1,9 @@
-/*Given an array of integers, calculate which fraction of its elements are positive, which fraction of its elements are negative, and which fraction of its elements are zeroes, respectively. Print the decimal value of each fraction on a new line.
+/*Given an array of integers, calculate which fraction of its elements are positive, 
+ * which fraction of its elements are negative, and which fraction of its elements are zeroes, respectively. 
+ * Print the decimal value of each fraction on a new line.
 
-Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable.
+Note: This challenge introduces precision problems. The test cases are scaled to six decimal places,
+ though answers with absolute error of up to  are acceptable.
 
 Input Format
 
@@ -31,10 +34,10 @@ public class PlusMinus {
 
 	static void plusMinus(int[] arr) {
         int ArrayLen = arr.length;
-        float Pos = 0,Neg = 0,zeero =0;
+        float Pos = 0,Neg = 0,zero =0;
             for(int i=0;i<ArrayLen;i++) {
         	if(arr[i]==0) {
-        		zeero++;
+        		zero++;
         	   	}else if(arr[i]>0) {
         	   		Pos++;
         	   	}else {
@@ -43,7 +46,7 @@ public class PlusMinus {
         }
         System.out.println(Pos/ArrayLen);
         System.out.println(Neg/ArrayLen);
-        System.out.println(zeero/ArrayLen);
+        System.out.println(zero/ArrayLen);
     }
 
     public static void main(String[] args) {

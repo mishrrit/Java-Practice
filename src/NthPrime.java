@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+/*
+ * To be corrected- not working 
+ */
 public class NthPrime {
 
 	public static void main(String[] args) {
