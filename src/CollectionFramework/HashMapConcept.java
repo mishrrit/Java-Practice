@@ -15,15 +15,6 @@ public class HashMapConcept {
 	marksMap.put("A", "A+Grade");
 	marksMap.put("B", "B+Grade");
     }
-
-import java.util.AbstractMap;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-public class Main {
 	public static void main(String[] args) {
 		Map<String, Integer> marks = new HashMap<String, Integer>();
 		marks.put("Ritesh", 85);
